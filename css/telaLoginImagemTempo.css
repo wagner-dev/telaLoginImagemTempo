@@ -1,0 +1,188 @@
+a{
+    color: #f9a100;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+/* Login  - desktop*/
+#homeLoginPai{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+@keyframes textLogin{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+#homeLogin{
+    background: #252525;
+    width: 55%;
+    border-radius: 15px;
+    height: auto;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+    padding: 0.5em 0em 0.5em 0em;
+}
+#homeLogin .imagem{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    animation: imgFT 0.5s;
+    padding: 0.5em 0em 0em 0em;
+}
+@keyframes imgFT {
+    0%{
+        opacity: 0.1;
+        transform: scale(0.7);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#homeLogin h2{
+    font-size: 3.2em;
+    color: #f9a100;
+    margin: 0.1em 0em 0.2em 0em;
+    animation: textLogin 0.4s;
+}
+input{
+    display: block;
+    margin: 0px auto 0.8em auto;
+    font-size: 1em;
+    width: 40%;
+    padding: 11px;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    animation: textLogin 0.4s;
+}
+.btnEntrar, .btnCancel{
+    display: inline;
+    width: 20%;
+    cursor: pointer;
+    background: #f9a100;
+    font-weight: 600;
+    animation: textLogin 0.4s;
+}
+.btnEntrar:hover, .btnCancel:hover{
+    background: #865600 !Important;
+    transition: 0.4s;
+    box-shadow: 0px 3px 5px 1px black;
+}
+input:hover{
+    background: #9c9c9c;
+    transition: all 0.4s;
+}
+
+#homeLogin a:hover{
+    transition: linear 0.4s;
+    text-decoration: underline;
+}
+
+
+/* Login  - final desktop*/
+
+/* MENOR QUE 1000PX  ------ IPAD/TABLET  */
+@media only screen and (max-width: 1000px){
+    /* login */
+
+			#homeLogin{
+                width: 75%;
+            }
+            #homeLogin h2{
+                font-size: 3.2em;
+                margin: 0.4em 0em 0.5em 0em;
+            }
+            input{
+                margin: 0px auto 0.8em auto;
+                font-size: 1em;
+                width: 40%;
+                padding: 11px;
+            }
+            .btnEntrar, .btnCancel{
+                width: 20%;
+            }
+            #homeLogin p{
+                width: 40%;
+                margin: 0px auto 0px auto;
+            }
+            /* Login  - final ipad/tablet*/
+}
+
+    /* Cell grandes/<ipad-mini */
+@media only screen and (max-width: 720px){
+
+    /* LOGIN */
+			#homeLogin{
+                width: 90%;
+            }
+            #homeLogin h2{
+                font-size: 3.4em;
+                margin: 0.8em 0em 0.8em 0em;
+            }
+            input{
+                margin: 0px auto 0.8em auto;
+                font-size: 1em;
+                width: 65%;
+                padding: 11px;
+            }
+            .btnEntrar, .btnCancel{
+                width: 25%;
+            }
+            #homeLogin p{
+                width: 40%;
+                margin: 0px auto 0px auto;
+            }
+            /* Final login */
+}
+ /* Cell normais - padrao */
+@media only screen and (max-width: 480px){
+    /* LOGIN */
+
+    #homeLogin{
+        width: 94%;
+    }
+    #homeLogin h2{
+        font-size: 3.4em;
+        margin: 0.8em 0em 0.8em 0em;
+    }
+    input{
+        margin: 0px auto 1em auto;
+        font-size: 1em;
+        width: 70%;
+        padding: 11px;
+    }
+    .btnEntrar, .btnCancel{
+        width: 30%;
+    }
+
+    /* Final login */
+}
+
+    
